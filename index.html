@@ -5,24 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de AutoCAD - Arq. Sheilla Soares</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
         /* --- RESET E VARIÁVEIS GERAIS --- */
         :root {
-            --primary-blue: #0f172a;
-            /* Azul escuro do cabeçalho/footer */
-            --accent-green: #00c853;
-            /* Verde vibrante dos botões */
-            --accent-orange: #f59e0b;
-            /* Laranja do destaque "AutoCAD" */
+            --primary-blue: #0f172a; /* Azul escuro do cabeçalho/footer */
+            --accent-green: #00c853; /* Verde vibrante dos botões */
+            --accent-orange: #f59e0b; /* Laranja do destaque "AutoCAD" */
             --text-dark: #333333;
             --text-light: #666666;
-            --bg-light: #f3f4f6;
-            /* Fundo cinza claro */
+            --bg-light: #f3f4f6; /* Fundo cinza claro */
             --white: #ffffff;
         }
 
@@ -39,10 +33,7 @@
             overflow-x: hidden;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -80,8 +71,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #1e3a8a;
-            /* Azul mais próximo da logo */
+            color: #1e3a8a; /* Azul mais próximo da logo */
         }
 
         .nav-links {
@@ -102,8 +92,9 @@
 
         /* --- PARTE 1: HERO SECTION --- */
         #hero {
+            /* ALTERADO AQUI: Caminho para a imagem local na pasta assets */
             background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
-                url('/assets/projeto.png');
+                url('assets/projeto.png');
             background-size: cover;
             background-position: center;
             color: var(--white);
@@ -297,8 +288,7 @@
 
         /* --- PARTE 4: CTA FINAL --- */
         #garantia {
-            background-color: #1e40af;
-            /* Azul vibrante */
+            background-color: #1e40af; /* Azul vibrante */
             color: var(--white);
             padding: 80px 0;
             text-align: center;
@@ -398,7 +388,6 @@
                 display: none;
             }
 
-            /* Simples hide para mobile neste exemplo */
             .hero-buttons {
                 flex-direction: column;
             }
@@ -418,7 +407,7 @@
             <div class="logo">Arq. Sheilla Soares</div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#sobre">Sobre o Curso</a></li>            
+                    <li><a href="#sobre">Sobre o Curso</a></li>
                     <li><a href="#publico">Publico</a></li>
                     <li><a href="#garantia">Contato</a></li>
                 </ul>
@@ -544,7 +533,7 @@
             window.open('https://wa.me/5524999322402', '_blank');
         }
 
-        // Script para rolagem suave ao clicar no menu (Opcional, pois o CSS scroll-behavior já ajuda)
+        // Script para rolagem suave ao clicar no menu
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
